@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>四个方向的箭头</title>
+</head>
+<style>
+  .jt {
+    width: 8px;
+    height: 8px;
+    border-top: 3px solid black;
+    border-right: 3px solid black;
+  }
+
+  .right {
+    transform: rotate(45deg);
+  }
+
+  .left {
+    transform: rotate(-135deg);
+  }
+
+  .up {
+    transform: rotate(-45deg);
+  }
+
+  .down {
+    transform: rotate(135deg);
+  }
+
+
+  .jiantou {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+</style>
+
+<body>
+  <div class="con">
+    <div class="jiantou">
+      右: <div class="right jt"></div>
+    </div>
+    <div class="jiantou">
+      左: <div class="left jt"></div>
+    </div>
+    <div class="jiantou">
+      上: <div class="up jt"></div>
+    </div>
+    <div class="jiantou">
+      下: <div class="down jt"></div>
+    </div>
+  </div>
+</body>
+
+</html>

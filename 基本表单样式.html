@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>表单</title>
+  <style>
+    .con {
+      margin: 30px auto;
+      width: 685px;
+      height: auto;
+      background: #f2f2f2;
+      border-radius: 10px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    .title {
+      width: 685px;
+      margin: 20px auto;
+    }
+
+    span {
+      display: block;
+      font-size: 18px;
+      font-weight: 500;
+      padding: 5px 0px;
+    }
+
+    input[type="text"],
+    select {
+      width: 100%;
+      border-radius: 5px;
+      height: 50px;
+      outline: none;
+      border: 1px solid #ccc;
+      padding-left: 10px;
+      box-sizing: border-box;
+      font-size: 16px;
+    }
+
+    .con>div {
+      width: 90%;
+      margin-bottom: 20px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    [type="submit"] {
+      color: white;
+      width: 100%;
+      outline: none;
+      background: #4CAF50;
+      border-radius: 5px;
+      border: none;
+      height: 50px;
+      font-size: 16px
+    }
+
+    [type="submit"]:hover {
+      background: #45a049;
+    }
+  </style>
+</head>
+
+<body>
+  <h3 class="title">使用 CSS 来渲染 HTML 的表单元素</h3>
+  <div class="con">
+    <div>
+      <span>First Name</span>
+      <input type="text" placeholder="Your name..">
+    </div>
+    <div>
+      <span>Last Name</span>
+
+      <input type="text" placeholder="Your last name..">
+    </div>
+    <div>
+      <span>Country</span>
+      <select name="" id="">
+        <option value="">中国</option>
+        <option value="">外国</option>
+      </select>
+    </div>
+    <div>
+      <button type="submit">Submit</button>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>提示信息</title>
+</head>
+<style>
+  .font-text {
+    border-bottom: 1px dashed #ccc;
+    width: 120px;
+    text-align: center;
+    padding: 5px 0;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .toolbar {
+    width: 120px;
+    height: 30px;
+    padding: 5px;
+    text-align: center;
+    line-height: 30px;
+    background: #555;
+    position: absolute;
+    left:50%;
+    margin-left: -60px;
+    bottom: -60px;
+    display: none;
+    transition: all 0.5s;
+  }
+  .toolbar::before{
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    left: 50%;
+    top: -30px;
+    margin-left: -20px;
+    border: 20px solid #555;
+    border-color: transparent transparent #555 transparent;
+  }
+  .font-text:hover .toolbar{
+    display: block;
+  }
+</style>
+
+<body>
+  <div class="con">
+    <div class="font-text">鼠标移动到这里
+      <div class="toolbar">这是提示文字</div>
+    </div>
+  </div>
+</body>
+
+</html>

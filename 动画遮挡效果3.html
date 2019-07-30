@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .con {
+      width: 400px;
+      position: relative;
+    }
+
+    .image {
+      width: 100%;
+      height: auto;
+    }
+
+    .mask {
+      position: absolute;
+      width: 0px;
+      height: 100%;
+      bottom: 0;
+      left: 0;
+      top: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.5s ease;
+      color: white;
+      font-size: 22px;
+      font-weight: 600;
+      background: #008CBA;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .con:hover .mask {
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="con">
+    <img src="https://static.runoob.com/images/mix/img_avatar.png" alt="" class="image">
+    <div class="mask">
+      Hello World
+    </div>
+  </div>
+</body>
+
+</html>

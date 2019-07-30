@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<style>
+  body {
+    margin: 0;
+  }
+
+  .con {
+    width: 800px;
+    min-height: 800px;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0px;
+    font-size: 0px;
+  }
+
+  li {
+    margin-bottom: 10px;
+    position: absolute;
+    width: 130px;
+    height: 55px;
+    left: -100px;
+    border-radius: 15px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 55px;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+
+  li:hover {
+    left: -10px;
+  }
+
+  .about {
+    top: 20px;
+    background: #4CAF50;
+  }
+
+  .blog {
+    top: 100px;
+    background: #2196F3;
+  }
+
+  .projects {
+    top: 180px;
+    background: #f44336;
+  }
+
+  .contact {
+    top: 260px;
+    background: #555;
+  }
+</style>
+
+<body>
+  <div class="con">
+    <ul>
+      <li class="about">About</li>
+      <li class="blog">Blog</li>
+      <li class="projects">Projects</li>
+      <li class="contact">Contact</li>
+    </ul>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>三种价格表</title>
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .con {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .price-card {
+    width: 31%;
+    border: 1px solid #eee;
+    text-align: center;
+  }
+
+  .price-card:hover {
+    box-shadow: 0 4px 4px 4px rgba(0,0,0,0.1);
+  }
+
+  .card-title {
+    height: 70px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 70px;
+    border-bottom: 0px !important;
+  }
+
+  .price-card>p {
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .price-card>p:last-child {
+    border-bottom: 0px;
+  }
+
+  .card-price {
+    height: 70px;
+    background: #ccc;
+    line-height: 70px;
+  }
+
+  .card-button {
+    height: 70px;
+    background: #ccc;
+    line-height: 70px;
+  }
+
+  .button {
+    width: 120px;
+    height: 40px;
+    outline: none;
+    border: 0px;
+    cursor: pointer;
+    background: #4CAF50;
+    color: white;
+    font-size: 18px;
+  }
+
+  .basic {
+    background: #555;
+  }
+
+  .pro {
+    background: #4CAF50;
+  }
+
+  .premium {
+    background: black;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .price-card {
+      width: 100%;
+    }
+  }
+</style>
+
+<body>
+  <div class="con">
+    <div class="price-card">
+      <p class="card-title basic">Basic</p>
+      <p class="card-price"><b>$ 9.99 / year</b></p>
+      <p>10GB Storage</p>
+      <p>10 Emails</p>
+      <p>10 Domains</p>
+      <p>1GB Bandwidth</p>
+      <p class="card-button">
+        <button class="button">Sign Up</button>
+      </p>
+    </div>
+    <div class="price-card">
+      <p class="card-title pro">Pro</p>
+      <p class="card-price"><b>$ 24.99 / year</b></p>
+      <p>10GB Storage</p>
+      <p>10 Emails</p>
+      <p>10 Domains</p>
+      <p>1GB Bandwidth</p>
+      <p class="card-button">
+        <button class="button">Sign Up</button>
+      </p>
+    </div>
+    <div class="price-card">
+      <p class="card-title premium">Premium</p>
+      <p class="card-price"><b>$ 49.99 / year</b></p>
+      <p>10GB Storage</p>
+      <p>10 Emails</p>
+      <p>10 Domains</p>
+      <p>1GB Bandwidth</p>
+      <p class="card-button">
+        <button class="button">Sign Up</button>
+      </p>
+    </div>
+  </div>
+</body>
+
+</html>

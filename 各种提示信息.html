@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>各种提示信息</title>
+</head>
+<style>
+  .con {
+    width: 800px;
+    height: auto;
+    
+  }
+
+  .info-bar {
+    width: 100%;
+    height: 60px;
+    border-left: 6px solid;
+    padding-left: 20px;
+    box-sizing: border-box;
+    line-height: 60px;
+    margin-bottom: 40px;
+  }
+
+  .danger {
+    border-color: #f44336;
+    background: #ffdddd;
+  }
+  .success{
+    border-color: #4CAF50;
+    background: #ddffdd;
+  }
+
+  .info{
+    border-color: #2196F3;
+    background: #e7f3fe;
+  }
+
+  .warning{
+    border-color: #ffeb3b;
+    background: #ffffcc;
+  }
+</style>
+
+<body>
+  <div class="con">
+    <div class="info-bar danger">
+      <b>Danger!</b> Some text...
+    </div>
+
+    <div class="info-bar success">
+      <b>Success!</b> Some text...
+    </div>
+
+    <div class="info-bar info">
+      <b>Info!</b> Some text...
+    </div>
+
+    <div class="info-bar warning">
+      <b>Warning!</b> Some text...
+    </div>
+  </div>
+</body>
+
+</html>

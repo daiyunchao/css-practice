@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>顶部导航</title>
+</head>
+<style>
+  body {
+    margin: 0;
+  }
+
+  .con {
+    width: 100%;
+    height: 60px;
+    background: #555;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0px;
+    font-size: 0px;
+  }
+
+  li {
+    display: inline-block;
+    min-width: 100px;
+    height: 100%;
+    line-height: 60px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  li:hover {
+    background: #ddd;
+    color: black;
+  }
+
+  .active {
+    background: #4CAF50;
+  }
+
+  .active:hover {
+    background: #4CAF50;
+    color: white;
+  }
+</style>
+
+<body>
+  <div class="con">
+    <ul>
+      <li class="active">主页</li>
+      <li>新闻</li>
+      <li>联系方式</li>
+      <li>关于我们</li>
+    </ul>
+  </div>
+</body>
+
+</html>

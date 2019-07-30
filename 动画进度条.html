@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>进度条</title>
+</head>
+<style>
+  .content {
+    width: 200px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    height: 20px;
+    position: relative;
+    background: #e9e5e2;
+    background-image: -webkit-linear-gradient(top, #e1ddd9, #e9e5e2);
+    
+  }
+
+  .bar {
+    background: #f674a4;
+    width: 90%;
+    height: 18px;
+    margin-top: 1px;
+    border-radius: 10px;
+    animation:bar 2s ease-out;
+  }
+
+  @keyframes bar {
+    0% {
+      width: 0%;
+    }
+
+    100% {
+      width: 90%;
+    }
+  }
+</style>
+
+<body>
+  <div>
+    <h4>Graphic Design</h4>
+    <div class="content">
+      <div class="bar"></div>
+    </div>
+  </div>
+</body>
+
+</html>

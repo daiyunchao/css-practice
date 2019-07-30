@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>上一页下一页</title>
+</head>
+<style>
+  .con {
+    width: 800px;
+    height: auto;
+  }
+
+  .con button {
+    width: 90px;
+    height: 35px;
+    background: #f1f1f1;
+    margin-right: 5px;
+    outline: none;
+    cursor: pointer;
+    border: 0px;
+    font-size: 16px;
+  }
+
+  .con .active {
+    color: white;
+    background: #4CAF50;
+  }
+
+  .con button:hover {
+    background: #ddd;
+  }
+
+  .con .active:hover {
+    color: white;
+    background: #4CAF50;
+  }
+
+  .con2{
+    width: 400px;
+    height: auto;
+    margin-top: 200px;
+  }
+
+  .con2 button{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #f1f1f1;
+    outline: none;
+    border: 0px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .con2 .active{
+    color: white;
+    background: #4CAF50;
+  }
+
+  .con2 button:hover {
+    background: #ddd;
+  }
+
+  .con2 .active:hover {
+    color: white;
+    background: #4CAF50;
+  }
+</style>
+
+<body>
+  <div class="con">
+    <button>« 上一页</button>
+    <button class="active">下一页 »</button>
+  </div>
+  <div class="con2">
+    <button>‹</button>
+    <button class="active">›</button>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>font-awesome图标菜单</title>
+</head>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .con {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #555;
+  }
+
+  .con>a {
+    font-size: 40px;
+    color: white;
+    flex: 1;
+    text-align: center;
+    transition: all 0.4s ease;
+  }
+
+  .active{
+    background: #4CAF50!important;
+  }
+
+  .con>a:hover{
+    background: black;
+  }
+</style>
+
+<body>
+  <div class="con">
+    <a class="active" href="#"><i class="fa fa-home"></i></a>
+    <a href="#"><i class="fa fa-search"></i></a>
+    <a href="#"><i class="fa fa-envelope"></i></a>
+    <a href="#"><i class="fa fa-globe"></i></a>
+    <a href="#"><i class="fa fa-trash"></i></a>
+  </div>
+</body>
+
+</html>

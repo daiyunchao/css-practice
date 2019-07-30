@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Document</title>
+</head>
+<style>
+  .con {
+    width: 99%;
+    margin: 0 auto;
+    background: #f1f1f1;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  .title {
+    width: 100%;
+    text-align: center;
+    margin: 30px auto;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  .login-three {
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .login-userinfo {
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .login-userinfo input {
+    width: 80%;
+    height: 45px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    line-height: 45px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    box-sizing: border-box;
+  }
+
+  .login-btn {
+    display: block;
+    outline: none;
+    width: 80%;
+    height: 45px;
+    background: #4CAF50;
+    border: 0px;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 20px;
+    line-height: 45px;
+  }
+
+  .login-three>div {
+    width: 80%;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+    height: 45px;
+    line-height: 45px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    box-sizing: border-box;
+  }
+
+  .facebook {
+    background: #3B5998;
+  }
+
+  .twitter {
+    background: #55ACEE;
+  }
+
+  .google {
+    background: #dd4b39;
+  }
+
+  .xian {
+    width: 4px;
+    background: #ccc;
+    position: absolute;
+    left: 50%;
+    top: 80px;
+    height: 200px;
+
+  }
+
+  .xian::before {
+    content: "OR";
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #f1f1f1;
+    border: 1px solid #ccc;
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    left: 50%;
+    margin-left: -15px;
+    text-align: center;
+    line-height: 30px;
+  }
+
+  .footer {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #666;
+  }
+
+  .footer-warp{
+    flex-wrap:nowrap;
+  }
+
+  .footer>div {
+    width: 100%;
+    text-align: center;
+    color: white;
+    height: 60px;
+    line-height: 60px;
+    font-size: 16px;
+  }
+
+  @media only screen and (max-width:650px) {
+    .xian {
+      display: none;
+    }
+
+    .login-userinfo {
+      width: 100%;
+    }
+
+    .login-three {
+      width: 100%;
+    }
+    .footer-warp{
+      flex-wrap:wrap;
+    }
+
+  }
+</style>
+
+<body>
+  <div class="con">
+    <div class="title">登陆表单</div>
+    <div class="login-three">
+      <div class="facebook"><i class="fa fa-facebook fa-fw"></i> Login with Facebook</div>
+      <div class="twitter"><i class="fa fa-twitter fa-fw"></i> Login with Twitter</div>
+      <div class="google"><i class="fa fa-google fa-fw"></i> Login with Google+</div>
+    </div>
+    <div class="xian"></div>
+    <div class="login-userinfo">
+      <input type="text" placeholder="UserName">
+      <input type="text" placeholder="Password">
+      <button class="login-btn">Login</button>
+    </div>
+    <div class="footer footer-warp">
+      <div>Sign Up</div>
+      <div>Forgot password?</div>
+    </div>
+  </div>
+</body>
+
+</html>
