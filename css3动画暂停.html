@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<style>
+  .con {
+    position: absolute;
+    left: 0px;
+    top: 20px;
+    width: 200px;
+    height: 200px;
+    background: red;
+    animation: move 2s linear 0s infinite alternate forwards;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+  }
+
+  label {
+    cursor: pointer;
+  }
+
+  @keyframes move {
+    0% {
+      left: 0px;
+    }
+
+    100% {
+      left: 500px;
+    }
+  }
+</style>
+
+<body>
+  <button id="btn">播放|暂停</button>
+  <div class="con" id="con"></div>
+</body>
+<script>
+  document.getElementById("btn").onclick = function () {
+    let status = document.getElementById("con").style.animationPlayState;
+    if (status == "paused") {
+      document.getElementById("con").style.animationPlayState = "running";
+    }else{
+      document.getElementById("con").style.animationPlayState = "paused";
+    }
+  }
+</script>
+
+</html>

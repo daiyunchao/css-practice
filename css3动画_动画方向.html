@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<style>
+  .con {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 1200px;
+    border: 1px solid #98bf21;
+    background: #e5eecc;
+  }
+
+  .controls {
+    flex: 1;
+
+  }
+
+  .show-con {
+    flex: 1
+  }
+
+  .show {
+    width: 80%;
+    background: white;
+    height: 400px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  .title {
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 20px;
+    padding-left: 10px;
+  }
+
+  ul {
+    margin: 0px;
+    padding: 0px;
+    font-size: 0px;
+    list-style: none;
+  }
+
+  li {
+    font-size: 14px;
+  }
+
+  label {
+    cursor: pointer;
+  }
+
+  .ele {
+    width: 40px;
+    height: 40px;
+    background: red;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    animation-name: changeleft;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 0;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+  }
+
+  @keyframes changeleft {
+    0% {
+      left: 0px;
+    }
+
+    100% {
+      left: 200px;
+    }
+  }
+</style>
+
+<body>
+  <div class="con">
+    <div class="controls">
+      <p>css属性:</p>
+      <span class="title">animation-direction</span>
+      <ul>
+
+        <li><input type="radio" name="direction" checked id="normal"><label for="normal">normal</label></li>
+        <li><input type="radio" name="direction" id="reverse"><label for="reverse">reverse</label></li>
+        <li><input type="radio" name="direction" id="alternate"><label for="alternate">alternate</label></li>
+        <li><input type="radio" name="direction" id="alternate-reverse"><label
+            for="alternate-reverse">alternate-reverse</label></li>
+      </ul>
+    </div>
+    <div class="show-con">
+      结果:
+      <div class="show">
+        <div class="ele" id="ele"></div>
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+  let radios = document.getElementsByTagName("input");
+  for (let index = 0; index < radios.length; index++) {
+    const element = radios[index];
+    element.onclick = function(){
+      document.getElementById("ele").style.animationDirection=this.id;
+    }
+
+  }
+</script>
+
+</html>

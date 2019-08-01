@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<style>
+  .con {
+    width: 200px;
+    height: 200px;
+    background: red;
+    animation: movediv 5s;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+  }
+
+  @keyframes movediv {
+    0% {
+      top: 0px;
+      left: 0px;
+    }
+
+    25% {
+      top: 0px;
+      left: 100px;
+    }
+
+    50% {
+      top: 100px;
+      left: 100px;
+    }
+
+    75% {
+      top: 100px;
+      left: 0px;
+    }
+
+    100% {
+      top: 0px;
+      left: 0px;
+    }
+  }
+</style>
+
+<body>
+  <div class="con"></div>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<style>
+  .shadow {
+    width: 315px;
+    height: 380px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 100px;
+  }
+
+  .flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .number {
+    font-size: 120px;
+    color: white;
+    background: #4CAF50;
+    height: 80%;
+
+  }
+
+.img{
+  height: 80%;
+  background: url(https://www.runoob.com/try/demo_source/rock600x400.jpg) no-repeat left top;
+  background-size: cover;
+}
+  .date {
+    height: 20%;
+    font-size: 20px;
+  }
+</style>
+
+<body>
+  <div class="shadow text-shadow">
+    <div class="number flex-center">1</div>
+    <div class="date flex-center">January 1, 2016</div>
+  </div>
+  <div class="shadow img-shadow">
+    <div class="img"></div>
+    <div class="date flex-center">Hardanger, Norway</div>
+  </div>
+</body>
+
+</html>

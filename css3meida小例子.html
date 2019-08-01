@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    ul {
+      list-style-type: none;
+    }
+
+    ul li a {
+      color: green;
+      text-decoration: none;
+      padding: 3px;
+      display: block;
+    }
+
+    @media screen and (max-width: 699px) and (min-width: 520px),(min-width:1151px) {
+    ul li a {
+        padding-left: 30px;
+        background: url(https://www.runoob.com/try/demo_source/email-icon.png) left center no-repeat;
+    }
+}
+
+@media screen and (min-width:700px) and (max-width:1000px){
+  ul li a::before{
+    content:"Email:";
+    color: #666;
+  }
+}
+
+@media screen and (min-width:1001px){
+  ul li a::after{
+    content:"("attr(data-email)")";
+    color: #666;
+    font-size: 12px;
+  }
+}
+  </style>
+</head>
+
+<body>
+
+  <ul>
+    <li><a data-email="johndoe@example.com" href="mailto:johndoe@example.com">John Doe</a></li>
+    <li><a data-email="marymoe@example.com" href="mailto:marymoe@example.com">Mary Moe</a></li>
+    <li><a data-email="amandapanda@example.com" href="mailto:amandapanda@example.com">Amanda Panda</a></li>
+  </ul>
+
+</body>
+
+</html>

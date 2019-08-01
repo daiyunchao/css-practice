@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .con {
+      width: 400px;
+      height: 400px;
+    }
+
+    .con1 {
+      background: radial-gradient(red, green, blue)
+    }
+
+    .con2 {
+      background: radial-gradient(red 5%, green 5%, blue 90%)
+    }
+
+    .con3 {
+      background: radial-gradient(circle, red, blue, green);
+    }
+
+    .con4 {
+      /* background: radial-gradient(ellipse,red,green,blue); */
+      background: -webkit-radial-gradient(red, yellow, green);
+      /* Safari 5.1 - 6.0 */
+      background: -o-radial-gradient(red, yellow, green);
+      /* Opera 11.6 - 12.0 */
+      background: -moz-radial-gradient(red, yellow, green);
+      /* Firefox 3.6 - 15 */
+      background: radial-gradient(red, yellow, green);
+      /* 标准的语法（必须放在最后） */
+    }
+
+    .con5{
+      background: repeating-radial-gradient(red,yellow 10%,green 15%)
+    }
+  </style>
+</head>
+
+<body>
+  圆形,颜色均等:
+  <div class="con con1"></div>
+  <br>
+
+  颜色不均等:
+  <div class="con con2"></div><br>
+
+  圆形:
+  <div class="con con3"></div><br>
+
+  椭圆(测试失败):
+  <div class="con con4"></div><br>
+
+  重复半价渐变:
+  <div class="con con5"></div><br>
+  <div class="con con6"></div><br>
+  <div class="con con7"></div><br>
+</body>
+
+</html>

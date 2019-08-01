@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<style>
+  .con {
+    width: 200px;
+    height: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: 1px solid #ccc;
+    transition: width 0.5s;
+  }
+  .con:hover{
+    overflow:visible;
+    text-overflow:inherit;
+    width: 800px;
+  }
+</style>
+
+<body>
+  <div class="con">张三李四王五张三李四王五张三李四王五张三李四王五张三李四王五张三李四王五张三李四王五张三李四王五张三李四王五张三李四王五</div>
+</body>
+
+</html>
