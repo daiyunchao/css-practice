@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>圆圈放大</title>
+  <style>
+    .con {
+      width: 1000px;
+      height: 800px;
+      border: 1px solid #777;
+      margin: 100px auto;
+    }
+.cricle{
+  width: 160px;
+  height: 160px;
+  background: linear-gradient(135deg,white,black);
+  border-radius: 50%;
+  margin:40px auto;
+  text-align: center;
+  line-height: 160px;
+  animation: fangda 1s;
+}
+
+@keyframes fangda{
+  0%{
+    opacity: 0;
+    transform: scale(0.0)
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+    
+  </style>
+</head>
+
+<body>
+  <div class="con">
+    <div class="cricle">
+      这是文字
+    </div>
+  </div>
+</body>
+
+</html>

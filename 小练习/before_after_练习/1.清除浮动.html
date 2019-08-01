@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>清除浮动</title>
+</head>
+<style>
+  .float_element {
+    float: left;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #999;
+  }
+
+  #float_con::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .float_after {
+    width: 200px;
+    height: 200px;
+    background: #dedede;
+  }
+</style>
+
+<body>
+  <div id="float_con">
+    <div class="float_element">这是一段浮动的内容</div>
+  </div>
+  <div class="float_after">这是浮动下的div</div>
+</body>
+
+</html>

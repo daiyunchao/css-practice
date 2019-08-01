@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>菜单11</title>
+  <style>
+    .con {
+      width: 1000px;
+      height: 300px;
+      border: 1px solid #dedede;
+      margin: 0 auto;
+      margin-top: 50px;
+      background-color: #0e83cd;
+    }
+
+    li {
+      list-style: none;
+      display: inline-block;
+      margin-right: 25px;
+      width: 150px;
+      height: 50px;
+      line-height: 50px;
+    }
+
+    span {
+      overflow: hidden;
+      font-size: 22px;
+      font-weight: 300;
+      color: #0972b4;
+      list-style: none;
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+      margin: 0 auto;
+      text-align: left;
+      background: #0e83cd;
+      border-top: 2px solid #0972b4;
+    }
+
+    span::after {
+      content: attr(data-title);
+      position: absolute;
+      overflow: hidden;
+      display: inline-block;
+      color: white;
+      left: 0px;
+      top: 0px;
+      max-width: 0px;
+      width: 150px;
+      height: 48px;
+      line-height: 50px;
+      text-align: left;
+      margin: 0 auto;
+      background: transparent;
+      border-bottom: 2px solid white;
+      -webkit-transition: all .5s;
+    }
+
+    span:hover::after {
+      max-width: 150px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="con">
+    <ul>
+      <li>
+        <span data-title='Wafture'>
+          Wafture
+        </span>
+      </li>
+      <li>
+        <span data-title='Sumptuous'>
+          Sumptuous
+        </span>
+      </li>
+      <li>
+        <span data-title='Scintilla'>
+          Scintilla
+        </span>
+      </li>
+      <li>
+        <span data-title='Propinquity'>
+          Propinquity
+        </span>
+      </li>
+      <li>
+        <span data-title='Harbinger'>
+          Harbinger
+        </span>
+      </li>
+    </ul>
+  </div>
+</body>
+
+</html>

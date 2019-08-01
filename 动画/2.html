@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<style>
+  .center {
+    text-align: center;
+  }
+
+  .btn {
+    width: 100px;
+    height: 50px;
+    margin: 0 auto;
+    background-color: #38d683;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-top: 20px;
+    -webkit-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -moz-transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  .btn3_left {
+    width: 100%;
+    position: relative;
+    float: left;
+  }
+
+  .btn3_right {
+    width: 0%;
+    height:100%;
+    position: relative;
+    background-color: rgba(12, 88, 74, 0.2);
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+  }
+
+
+  .btn:hover {
+    background-color: #2aca76;
+  }
+</style>
+
+<body>
+  <div class="center">
+    <div class="btn">
+      Submit
+    </div>
+    <div class="btn btn2">
+      Submit
+    </div>
+    <div class="btn btn3">
+      <div class="btn3_left">Submit</div>
+      <div class="btn3_right"></div>
+    </div>
+  </div>
+  <script>
+    document.querySelector(".btn").onclick = function () {
+      this.style.backgroundColor = "#666";
+      this.style.width = "120px";
+      this.innerHTML = "Loadding..."
+      setTimeout(() => {
+        this.style.backgroundColor = "#38d683";
+        this.style.width = "100px";
+        this.innerHTML = "Submit"
+      }, 1000)
+    };
+
+    document.querySelector(".btn2").onclick = function () {
+      this.style.backgroundColor = "#666";
+      this.style.width = "50px";
+      this.style.width = "50px";
+      this.style.borderRadius = "50%";
+      this.innerHTML = "等"
+      setTimeout(() => {
+        this.style.backgroundColor = "#38d683";
+        this.style.width = "100px";
+        this.innerHTML = "Submit"
+        this.style.borderRadius = "5px";
+      }, 1000)
+    };
+
+    document.querySelector(".btn3").onclick = function () {
+      this.style.backgroundColor = "#666";
+      this.style.width = "120px";
+      var btnLeft = document.querySelector(".btn3_left");
+      var btnRight = document.querySelector(".btn3_right");
+      btnRight.style.width = "100%";
+      setTimeout(() => {
+        this.style.backgroundColor = "#38d683";
+        this.style.width = "100px";
+        this.style.borderRadius = "5px";
+        btnRight.style.width = "0%";
+      }, 2000)
+    };
+
+  </script>
+</body>
+
+</html>

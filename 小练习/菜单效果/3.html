@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>菜单三</title>
+  <style>
+    .con {
+      width: 1000px;
+      height: 300px;
+      border: 1px solid #dedede;
+      margin: 0 auto;
+      margin-top: 50px;
+      background-color: #0e83cd;
+    }
+    li{
+      font-size: 20px;
+      font-weight: 300;
+      list-style: none;
+      width: 150px;
+      height: 40px;
+      line-height: 40px;
+      background: #2195de;
+      display: inline-block;
+      text-align: center;
+      margin: 0 auto;
+      margin-right: 30px;
+      color: white;
+      transform-origin: 50% 0;
+      text-shadow:0 0 1px rgba(255,255,255,0.3);
+      cursor: pointer;
+      transform: rotateX(0deg);
+      transform-style: preserve-3d;
+      -webkit-transition: -webkit-transform 0.3s; 
+    }
+
+    li::before{
+      content: attr(data-title);
+      display: inline-block;
+      transform: rotateX(-90deg);
+      width: 150px;
+      height: 40px;
+      line-height: 40px;
+      background: #0965a0;
+      position: absolute;
+      top: 40px;
+      left: 0px;
+      transform-origin: 50% 0;
+    }
+    li:hover{
+      transform: rotateX(90deg);
+    }
+    /* li:hover::after{
+      background: #28a2ee;	
+    } */
+  </style>
+</head>
+
+<body>
+  <div class="con">
+    <ul>
+      <li data-title='Wafture'>Wafture</li>
+      <li data-title='Sumptuous'>Sumptuous</li>
+      <li data-title='Scintilla'>Scintilla</li>
+      <li data-title='Propinquity'>Propinquity</li>
+      <li data-title='Harbinger'>Harbinger</li>
+    </ul>
+  </div>
+</body>
+
+</html>

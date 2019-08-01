@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>菜单二</title>
+  <style>
+    .con {
+      width: 1000px;
+      height: 300px;
+      border: 1px solid #dedede;
+      margin: 0 auto;
+      margin-top: 50px;
+      background-color: #f19f0f;
+    }
+    li{
+      font-size: 22px;
+      font-weight: 300;
+      color: white;
+      list-style: none;
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+      margin: 0 auto;
+      width: 150px;
+      height: 30px;
+      text-align: center;
+    }
+
+    li::after{
+      content: ' ';
+      position: absolute;
+      width: 120px;
+      height: 4px;
+      background: rgba(0, 0, 0, 0.1);
+      opacity: 0;
+      top: 35px;
+      left: 15px;
+      display: inline-block;
+      margin:0 auto;
+      transform:translateY(20px);
+      -webkit-transition: -webkit-transform 0.3s, opacity 0.2s; 
+    }
+
+    li:hover::after{
+      transform:translateY(0px);
+      opacity: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="con">
+    <ul>
+      <li>Wafture</li>
+      <li>Sumptuous</li>
+      <li>Scintilla</li>
+      <li>Propinquity</li>
+      <li>Harbinger</li>
+    </ul>
+  </div>
+</body>
+
+</html>

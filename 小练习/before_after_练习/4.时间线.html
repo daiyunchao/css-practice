@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>时间线</title>
+    <style>
+    .con {
+      width: 600px;
+      height: 600px;
+      margin: 0 auto;
+      border: 1px solid #dedede;
+      margin-top: 50px;
+    }
+    .con_ul{
+
+    }
+    .con_ul li{
+        height: 20px;
+        list-style: none;
+        padding:20px 0;
+        position: relative;
+    }
+    .con_ul li::before{
+        content: ' ';
+        width: 10px;
+        height: 10px;
+        background: #dedede;
+        position: absolute;
+        border-radius: 50%;
+        top:28px;
+        left: -12px;
+    }
+    .con_ul li::after{
+        content: ' ';
+        width: 4px;
+        height: 50px;
+        position: absolute;
+        left: -9px;
+        top: 38px;
+        background: #dedede;
+    }
+    .con_ul span{
+        color: #999;
+        font-size: 12px;
+    }
+    .begin::after{
+        width: 0px !important;
+        height: 0px !important;
+    }
+    .selected::before{
+        background: blue !important;
+    }
+</style>
+</head>
+<body>
+    <div class="con">
+        <div>
+            <ul class="con_ul">
+                <li>配送完成</li>
+                <li class="selected">开始配送 <span>(2019年04月03日23:07:14)</span></li>
+                <li>接收订单 <span>(2019年04月03日23:07:20)</span></li>
+                <li>提交订单 <span>(2019年04月03日23:07:24)</span></li>
+                <li>选择商品 <span>(2019年04月03日23:07:27)</span></li>
+                <li class="begin">打开网站 <span>(2019年04月03日23:07:30)</span></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

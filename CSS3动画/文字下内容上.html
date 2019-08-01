@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>文字下图片上</title>
+  <style>
+    .con {
+      width: 1000px;
+      height: 800px;
+      border: 1px solid #777;
+      margin: 100px auto;
+    }
+
+    .imags{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top:40px; 
+      flex-wrap: wrap;
+      animation: imgUp 1s;
+      animation-delay: 0.3s;
+    }
+    .font{
+      width: 100%;
+      text-align: center;
+      font-size: 40px;
+      font-weight: 700;
+      color: #333;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      animation:fontDown 1s;
+      animation-delay: 0.1s;
+    }
+    .img{
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      background: linear-gradient(135deg,#f24610,#fc2b5f);
+      color: white;
+      text-align: center;
+      line-height: 160px;
+      margin-right: 30px;
+      margin-bottom: 40px;
+      
+    }
+    @keyframes fontDown{
+      0%{
+        transform: translate3d(0px, -200px, 0px);
+      }
+      100%{
+        transform: none;
+      }
+    }
+
+    @keyframes imgUp{
+      0%{
+        transform: translate3d(0px, 200px, 0px);
+      }
+      100%{
+        transform: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="con">
+    <div class="font">品质保障</div>
+    <div class="imags">
+      <div class="img">
+        内容1
+      </div>
+      <div class="img">
+          内容2
+        </div>
+        <div class="img">
+            内容3
+          </div>
+          <div class="img">
+              内容4
+            </div>
+            <div class="img">
+                内容1
+              </div>
+              <div class="img">
+                  内容2
+                </div>
+                <div class="img">
+                    内容3
+                  </div>
+                  <div class="img">
+                      内容4
+                    </div>
+                    <div class="img">
+                        内容1
+                      </div>
+                      <div class="img">
+                          内容2
+                        </div>
+    </div>
+  </div>
+</body>
+
+</html>

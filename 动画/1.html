@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS3过渡动画</title>
+  <style>
+    .center {
+      text-align: center;
+    }
+
+    .content {
+      font-size: 22px;
+      font-weight: 600;
+      width: 100px;
+      margin: 0 auto;
+    }
+    .content_border{
+      width:0px;
+      border-bottom: 2px solid transparent;
+      -webkit-transition: all 1s ease-in-out;
+      -moz-transition: all 1s ease-in-out;
+      -o-transition: all 1s ease-in-out;
+      transition: all 1s ease-in-out;
+      margin:0 auto;
+    }
+
+
+    .btn {
+      margin-top: 20px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      background-color: transparent;
+      width: 100px;
+      height: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="center">
+    <div class="content">
+      <span class="content_text">前端学院</span>
+      <div class="content_border"></div>
+    </div>
+    
+    <button class="btn">样式切换</button>
+  </div>
+  <script>
+    var show = function () {
+      var btn = document.querySelector(".btn");
+      var content_div = document.querySelector(".content_border");
+      btn.onmouseover = function () {
+        content_div.style.borderBottomColor = "blue";
+        content_div.style.width="100px"
+      }
+      btn.onmouseout = function () {
+        content_div.style.borderBottomColor = "transparent";
+        content_div.style.width="0px"
+      }
+    }
+    document.onload = show();
+  </script>
+</body>
+
+</html>

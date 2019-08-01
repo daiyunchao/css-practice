@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<style>
+  .center {
+    text-align: center;
+  }
+
+  .btn {
+    width: 100px;
+    height: 50px;
+    margin: 0 auto;
+    background-color: #38d683;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 3px;
+    -webkit-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -moz-transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  .btn:hover {
+    background-color: #2aca76;
+  }
+</style>
+
+<body>
+  <div class="center">
+    <div class="btn">
+      Submit
+    </div>
+  </div>
+  <script>
+    document.querySelector(".btn").onclick = function () {
+      this.style.backgroundColor = "#666";
+      this.style.width = "120px";
+      this.innerHTML = "Loadding..."
+      setTimeout(() => {
+        this.style.backgroundColor = "#38d683";
+        this.style.width = "100px";
+        this.innerHTML = "Submit"
+      }, 1000)
+    };
+
+  </script>
+</body>
+
+</html>

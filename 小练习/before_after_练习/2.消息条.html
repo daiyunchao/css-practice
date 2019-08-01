@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>仿微信的消息聊天</title>
+  <style>
+    .contents {
+      width: 540px;
+      height: 600px;
+      border: 1px solid #999;
+      background: rgb(245, 245, 245);
+      margin: 0 auto;
+    }
+
+    .msg_content {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-top: 30px;
+      margin-left: 20px;
+      font-size: 14px;
+    }
+
+    .contents img {
+      width: 35px;
+      height: 35px;
+      border-radius: 5px;
+    }
+
+    .msg {
+      margin-left: 14px;
+      background-color: #fff;
+      color: black;
+      padding: 5px 8px;
+      position: relative;
+      border-radius: 4px;
+    }
+
+    .msg::before {
+      content: ' ';
+      position: absolute;
+      width: 0px;
+      height: 0px;
+      border: 10px solid #ccc;
+      border-color: transparent white transparent transparent;
+      left: -16px;
+      top: 50%;
+      -webkit-transform: translate(0px, -50%);
+      z-index: 1;
+    }
+
+    .msg_content_mime {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-top: 30px;
+      margin-right: 20px;
+    }
+
+    .msg_mime {
+      margin-right: 14px;
+      background-color: rgb(158, 234, 106);
+      color: black;
+      padding: 5px;
+      position: relative;
+      border-radius: 4px;
+    }
+
+    .msg_mime::after {
+      content: ' ';
+      position: absolute;
+      width: 0px;
+      height: 0px;
+      border: 10px solid #ccc;
+      border-color: transparent transparent transparent rgb(158, 234, 106);
+      right: -16px;
+      top: 50%;
+      -webkit-transform: translate(0px, -50%);
+      z-index: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="contents">
+    <div class="msg_content">
+      <img src="https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=622248484,738067824&fm=58" alt="">
+      <div class="msg">在吗?</div>
+    </div>
+    <div class="msg_content_mime">
+      <div class="msg_mime">在的</div>
+      <img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2079087456,3138605398&fm=27&gp=0.jpg" alt="">
+    </div>
+    <div class="msg_content_mime">
+      <div class="msg_mime">你是要借钱吗?</div>
+      <img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2079087456,3138605398&fm=27&gp=0.jpg" alt="">
+    </div>
+    <div class="msg_content_mime">
+      <div class="msg_mime">没有钱,别想了!</div>
+      <img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2079087456,3138605398&fm=27&gp=0.jpg" alt="">
+    </div>
+    <div class="msg_content">
+      <img src="https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=622248484,738067824&fm=58" alt="">
+      <div class="msg">不是借钱,不是借钱</div>
+    </div>
+    <div class="msg_content">
+      <img src="https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=622248484,738067824&fm=58" alt="">
+      <div class="msg">我怀孕了!</div>
+    </div>
+    <div class="msg_content_mime">
+      <div class="msg_mime">不是我的!</div>
+      <img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2079087456,3138605398&fm=27&gp=0.jpg" alt="">
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,665 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 1240px;
+}
+
+dt,
+dd {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+.height100 {
+  height: 100%;
+}
+
+.font16 {
+  font-size: 16px;
+}
+
+.font18 {
+  font-size: 18px;
+}
+
+.header {
+  height: 83px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #efefef;
+}
+
+.max-width {
+  width: 1240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.header_logo {
+  text-align: left;
+  flex: 2;
+}
+
+.header_logo img {
+  width: 125px;
+  height: 25px;
+}
+
+.header_menu {
+  text-align: right;
+  flex: 8;
+}
+
+.header_menu li {
+  display: inline-block;
+  list-style: none;
+  padding-left: 15px;
+  padding-right: 15px;
+  cursor: pointer;
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+.header_search_li {
+  position: relative;
+}
+
+
+.header_search {
+  border-radius: 15px;
+  height: 30px;
+  padding-left: 20px;
+  outline-style: none;
+  border: 1px solid #efefef;
+  color: black;
+  width: 175px;
+}
+
+.fixed_header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  border-bottom: 1px solid #dedede;
+  opacity: 0.9;
+}
+
+.header_search_img {
+  width: 18px;
+  height: 15px;
+  position: absolute;
+  bottom: 8px;
+  left: 190px;
+}
+
+.header_icon_li {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.header_icon {
+  width: 30px;
+  height: 30px;
+}
+
+.brand_name {
+  font-size: 26px;
+}
+
+.header_user {}
+
+.header_menu li:hover {
+  color: #00c3f5;
+}
+
+.relative {
+  position: relative;
+}
+
+.cart_icon {
+  min-width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  font-size: 10px;
+  color: white;
+  text-align: center;
+}
+
+
+.scroll_header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #efefef;
+  height: 68px;
+  background-color: #f6f8fb;
+}
+
+.scorll_menu_border {
+  border-left: 1px solid #dedede;
+  border-right: 1px solid #dedede;
+}
+
+.scroll_header_menu li {
+  font-size: 16px;
+}
+
+.content {
+  margin-bottom: 60px;
+}
+
+.content_left {
+  flex: 1;
+  margin: 40px;
+  text-align: left;
+}
+
+.content_sm_img_list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 40px;
+}
+
+.sm_pic_ {
+  width: 82px;
+  height: 82px;
+  margin-right: 35px;
+  border: 1px solid transparent;
+}
+
+.sm_pic_ img {
+  width: 80px;
+  height: 80px;
+}
+
+.sm_pic_:hover {
+  border: 1px solid #dedede;
+  cursor: pointer;
+}
+
+.sm_shouchang_ {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 60px;
+  font-size: 14px;
+  vertical-align: middle;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.icon_shouchang {
+  color: #BFBFBF;
+  font-size: 18px;
+}
+
+.icon_shouchang_span {
+  display: block;
+  color: #BFBFBF;
+}
+
+.icon_kuaidi {
+  margin-right: 5px;
+}
+
+.sm_shouchang_icon {
+  width: 40px;
+  height: 80px;
+  margin-right: 15px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+
+.content_right {
+  flex: 1;
+  margin-top: 80px;
+  align-self: flex-start;
+
+}
+
+.content_right_desc {
+  color: #e22841;
+}
+
+.content_right_bg_desc {
+  margin-top: 10px;
+  width: 100%;
+  background-color: #f4f6fa;
+  padding: 16px 0 12px 5px;
+}
+
+.price {
+  color: #e02b41;
+  font-size: 36px;
+  font-weight: 500;
+  padding: 5px;
+
+}
+
+.add_price {
+  display: inline-block;
+  background-color: #F2EAEF;
+  color: #e02b41;
+  border-radius: 2px;
+  width: 72px;
+  text-align: center;
+  padding: 4px 0;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.add_price_desc {
+  margin-left: 10px;
+  font-size: 14px;
+  color: #595959;
+}
+
+.now_buy {
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.now_buy a {
+  text-decoration: none;
+  color: #27b3ff;
+}
+
+.content_right_server {
+  margin-top: 10px;
+  line-height: 25px;
+  padding-bottom: 20px;
+  border-bottom: 1px dashed #dedede;
+}
+
+.content_right_details {
+  margin-top: 20px;
+}
+
+.table_title {
+  font-size: 12px;
+  color: #8c8c8c;
+  width: 60px;
+  display: inline-block;
+
+}
+
+.table_value {
+  margin-left: 10px;
+}
+
+.table_value_span {
+  font-size: 12px;
+  color: #8c8c8c;
+  margin-right: 20px;
+}
+
+.nbsp {
+  padding: 0 5px;
+}
+
+.kuaidi {
+  font-size: 12px;
+  color: #8c8c8c;
+}
+
+.kuaidi_address_ {
+  font-size: 14px !important;
+  color: #162626 !important;
+  margin-right: 5px !important;
+}
+
+.icon_down {
+  font-size: 12px;
+}
+
+.kuaidi_che {
+  margin-left: 15px;
+  margin-right: 5px;
+}
+
+.icon_che {
+  color: #27B3FF;
+}
+
+.icon_che_span {
+  margin-left: 10px;
+  color: #27B3FF !important;
+}
+
+.zaixian_kefu {
+  margin-left: 5px;
+  color: #27B3FF;
+}
+
+.content_right_details {
+  line-height: 50px;
+}
+
+.xinghao>div {
+  display: inline-block;
+  width: 150px;
+  height: 36px;
+  text-align: center;
+  line-height: 36px;
+  border-radius: 2px;
+  margin-right: 10px;
+  border: 1px solid #bfbfbf;
+  cursor: pointer;
+  color: #595959;
+}
+
+.xinghao_selected {
+  border-color: #000 !important;
+  color: #000 !important;
+}
+
+.colors>div {
+
+  width: 150px;
+  height: 36px;
+  text-align: center;
+  line-height: 36px;
+  border-radius: 2px;
+  margin-right: 10px;
+  border: 1px solid #bfbfbf;
+  cursor: pointer;
+  color: #595959;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.color_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.color_img {
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+}
+
+.shengqian_red {
+  color: red;
+  font-size: 12px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.fenqi>div {
+  display: inline-block;
+  width: 150px;
+  height: 45px;
+  text-align: center;
+  line-height: 23px;
+  border-radius: 2px;
+  margin-right: 10px;
+  border: 1px solid #bfbfbf;
+  cursor: pointer;
+  color: #595959;
+  vertical-align: middle;
+}
+
+.count>div {
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  line-height: 23px;
+  border-radius: 0px;
+  margin-right: 10px;
+  border: 1px solid #dedede;
+  cursor: pointer;
+  color: #595959;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.count_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 40px;
+}
+
+.count_border {
+  background: #f7f7f7;
+  color: black;
+  width: 30px;
+  height: 40px;
+}
+
+.count_border>span {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  line-height: 37px;
+}
+
+#count_input {
+  width: 60px;
+  height: 40px;
+  border: 0px;
+  text-align: center;
+  border-left: 1px solid #dedede;
+  border-right: 1px solid #dedede;
+}
+
+.margin20 {
+  margin-top: 40px;
+}
+
+.marginbtm20 {
+  margin-bottom: 20px;
+}
+
+.buy_now_btn {
+  width: 210px;
+  height: 55px;
+  background: #23A0E5;
+  color: white;
+  border: 0px;
+  border-radius: 2px;
+  font-size: 20px;
+  margin-right: 25px;
+}
+
+.buy_add_btn {
+  width: 210px;
+  height: 55px;
+  border: 1px solid #23A0E5;
+  color: #23A0E5;
+  border-radius: 2px;
+  font-size: 20px;
+  background: white;
+}
+
+.fenqi_title {}
+
+.fenqi_shouxufei {
+  font-size: 12px;
+  color: #8c8c8c;
+}
+
+.service_note {
+  background: #f4f4f4;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.service_note_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.footer {
+  padding-top: 40px;
+}
+
+.footer_header_logo {
+  display: flex;
+  text-align: left;
+  flex: 2;
+}
+
+.footer_logo {
+  width: 150px;
+  height: 69px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.footer_logo img {
+  width: 50px;
+}
+
+.footer_logo span {
+  color: #999;
+}
+
+.footer_header_phone_number {
+  text-align: right;
+  line-height: 30px;
+}
+
+.phone_time {
+  font-size: 12px;
+  color: #999;
+}
+
+.phone_number {
+  font-size: 25px;
+  font-weight: 400;
+  color: #00c3f5;
+}
+
+.phone_btn {
+  width: 86px;
+  height: 30px;
+  font-size: 12px;
+  background: #0bbbef;
+  color: white;
+  border: 0px;
+  border-radius: 20px;
+  margin-top:5px;
+}
+
+.footer_header_phone_number span {
+  display: block;
+}
+
+.paddingbtm20 {
+  padding-bottom: 20px;
+}
+
+.borderbtm {
+  border-bottom: 1px solid #eee;
+}
+
+.footer-link {
+  text-align: left;
+}
+
+.footer-link ul {
+  width: 100%;
+  height: 40px;
+}
+
+.no-border{
+  border:0px !important;
+}
+
+.footer-link li {
+  margin-top: 30px;
+  display: inline-block;
+  list-style: none;
+  padding-right: 15px;
+  margin-right: 15px;
+  margin-bottom: 20px;
+  border-right: 1px solid #d6d6d6;
+}
+.footer-link a:hover{
+  color: #0bbbef;
+}
+
+.footer-link a {
+  font-size: 12px;
+  text-decoration: none;
+  color: #999;
+}
+.copyright{
+  margin-top: 5px;
+  font-size: 12px;
+  color: #999;
+  text-align: left;
+}
+.copyright_info{
+  display: inline-block;
+  width: 100%;
+}
+.copyright_share{
+  display: inline-block;
+  text-align: right;
+  line-height:20px;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icp{
+  margin-left: 18px;
+}
+.hz{
+  margin-left: 10px;
+}
+.has_border{
+  border-left: 1px solid #999;
+}
+.copyright_share span{
+  margin-right: 20px;
+  padding-right: 0px;
+  display: inline-block;
+  height: 20px;
+}
+.xiaochengxu{
+  width: 21px;
+  height: 20px;
+  background-image: url('https://fms.res.meizu.com/dms/2019/01/07/3b085af8-a47b-453c-b147-a4b352fb3a14.png');
+  background-size: 96%;
+  display: inline-block;
+  background-repeat:no-repeat;
+}
+.weixin{
+  background-image: url('https://fms.res.meizu.com/dms/2019/01/07/58e3e041-5543-4414-aaf1-d8e1fd539af6.png')!important;
+}
+.kongjian{
+  background-image: url('https://fms.res.meizu.com/dms/2019/01/07/52cba4a4-b3a6-4522-9883-d3a918e7d4a9.png')!important;
+}
+.weibo{
+  background-image: url('https://fms.res.meizu.com/dms/2019/01/07/bcccf9d2-e0e5-441b-b4a3-f78c12bc3933.png')!important;
+}
+.hr{
+  width: 1px;
+  height: 14px!important;
+  background: #ccc;
+  padding-right: 0px!important;
+  display: inline-block;
+  margin-right: 10px;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>菜单五</title>
+  <style>
+    .con {
+      width: 1000px;
+      height: 300px;
+      border: 1px solid #dedede;
+      margin: 0 auto;
+      margin-top: 50px;
+      background-color: #cd4436;
+    }
+    li {
+      font-size: 22px;
+      font-weight: 300;
+      color: white;
+      list-style: none;
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+      margin: 0 auto;
+      width: 150px;
+      height: 30px;
+      text-align: center;
+      transform: rotateX(0deg);
+      transform-style: preserve-3d;
+      -webkit-transition: -webkit-transform 0.3s; 
+    }
+
+    li::after{
+      width: 150px;
+      height: 30px;
+      text-align: center;
+      position: absolute;
+      display: inline-block;
+      content: attr(data-title);
+      left: 0px;
+      top: 30px;
+      transform: rotateX(-90deg);
+    }
+    li:hover{
+      transform: rotateX(90deg);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="con">
+    <ul>
+        <li data-title='Wafture'>Wafture</li>
+        <li data-title='Sumptuous'>Sumptuous</li>
+        <li data-title='Scintilla'>Scintilla</li>
+        <li data-title='Propinquity'>Propinquity</li>
+        <li data-title='Harbinger'>Harbinger</li>
+    </ul>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>进度线</title>
+  <style>
+    .con {
+      width: 600px;
+      height: 300px;
+      margin: 0 auto;
+      border: 1px solid #dedede;
+      margin-top: 200px;
+    }
+
+    .progress-line {
+      margin-top: 100px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .item {
+      display: inline-block;
+      height: 30px;
+      margin: 0px;
+      width: 120px;
+    }
+
+    .title {
+      display: block;
+    }
+
+    .step {
+      display: block;
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
+      border-radius: 50%;
+      background: #dedede;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .step::before
+     {
+      content: ' ';
+      width: 55px;
+      height: 4px;
+      background-color: #d5d5d5;
+      position: absolute;
+      top: 8px;
+      right: 20px;
+    }
+    .step::after
+     {
+      content: ' ';
+      width: 55px;
+      height: 4px;
+      background-color: #d5d5d5;
+      position: absolute;
+      top: 8px;
+      left: 20px;
+    }
+    .selected{
+      color: red;
+    }
+    .selected .step{
+     background: red;
+     color: white;
+    }
+    .selected .step::before,
+    .selected .step::after
+    {
+      background: red;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="con">
+    <div class="progress-line">
+      <div class="item selected">
+        <span class="title">填写身份信息</span>
+        <span class="step">1</span>
+      </div>
+      <div class="item">
+        <span class="title">补充用户资料</span>
+        <span class="step">2</span>
+      </div>
+      <div class="item">
+        <span class="title">完成注册</span>
+        <span class="step">3</span>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
