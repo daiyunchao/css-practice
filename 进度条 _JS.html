@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<style>
+  .con {
+    width: 400px;
+    height: 20px;
+    border: 1px solid #f1f1f1;
+    background: #ddd;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .p10 {
+    width: 0%;
+    height: 100%;
+    background: green;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: right;
+    /* padding-right: 5px; */
+    box-sizing:border-box;
+  }
+</style>
+
+<body>
+  <div class="con">
+    <div class="p10" id="p10">0%</div>
+  </div>
+</body>
+<script>
+  function move(p) {
+    requestAnimationFrame(() => {
+      p += 1;
+      document.getElementById("p10").style.width = p + "%";
+      if (p < 10) {
+        move(p)
+      }
+    })
+  }
+  setTimeout(() => {
+    move(0);
+  }, 500);
+</script>
+
+</html>

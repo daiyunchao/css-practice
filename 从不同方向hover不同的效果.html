@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<style>
+  .con {
+    width: 400px;
+    height: 400px;
+    background: #555;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    line-height: 400px;
+    margin: 200px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .po {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    transition: all 0.7s ease;
+  }
+
+  .top {
+    top: -330px;
+  }
+  .top:hover{
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: blue;
+  }
+
+  
+
+  .left {
+    left: -330px;
+    top: 0px;
+  }
+
+  .left:hover {
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: green;
+  }
+
+
+  .bottom {
+    bottom: -330px;
+  }
+
+  .bottom:hover {
+    bottom: 0px;
+    background: red;
+  }
+
+  .right {
+    right: -330px;
+    top: 0px;
+  }
+  .right:hover{
+    right:0px;
+    background: yellow;
+  }
+</style>
+
+<body>
+
+  <div class="con">
+    从不同的方向hover
+    <div class="top po"></div>
+    <div class="left po"></div>
+    <div class="bottom po"></div>
+    <div class="right po"></div>
+  </div>
+</body>
+
+</html>
