@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 水平居中 */
+        #div1 {
+            margin: 0 auto;
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+        }
+
+        /* 绝对定位居中 */
+        .outer {
+            width: 300px;
+            height: 300px;
+            position: relative;
+            background-color: #ccc;
+        }
+
+        span {
+            float: left;
+            position: absolute;
+            background-color: red;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #div123 {
+            border: 1px solid black;
+            position: absolute;
+            width: 200px;
+            height: 100px;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+    </style>
+
+    <style>
+        /* 居中图片 */
+        .outer {
+            width: 300px;
+            height: 300px;
+            border: 1px solid #cccccc;
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        img {
+            width: 150px;
+            height: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div1"></div>
+
+    <div class="outer">
+        <span>我想居中显示</span>
+    </div>
+
+    <div class="outer">
+        <img src="nz.jpg" alt="">
+    </div>
+
+    <div style="position: relative;width: 100%;height: 700px;">
+        <div id="div123">
+
+        </div>
+    </div>
+
+</body>
+
+</html>

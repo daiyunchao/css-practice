@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* :first-of-type */
+      div>p:first-of-type{
+           color: red;
+       }
+
+       /* :last-of-type */
+       div>p:last-of-type{
+           color: blue;
+       }
+
+       div>p:only-of-type{
+        color: orange;
+       }
+
+       div>p:only-child{
+        color: royalblue;
+       }
+
+       div>span{
+           display:block;
+       }
+       div>span:nth-child(2){
+           color: seagreen;
+       }
+       input{
+           width: 200px;
+           height: 40px;
+           border-radius: 5px;
+       }
+       input:enabled{
+           border: 1px solid green;
+       }
+       input:disabled{
+           border: 1px solid red;
+       }
+
+       input[type="checkbox"]:checked{
+           border-color: red;
+       }
+       
+       #div1:first-child{
+           color: indigo;
+       }
+       #div1:last-child{
+           color: indigo;
+       }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <h1>first child</h1>
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <h1>last child</h1>
+    </div>
+    <div>
+        <p>only-of-type</p>
+        <h5>除了p标签还有其他标签</h5>
+    </div>
+    <div>
+        <p>only-child</p>
+    </div>
+    <div>
+        <h1>212112</h1>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+    </div>
+    <div>
+        <input type="text" name=""  id="inpenable"><button onclick="javascript:document.getElementById('inpenable').disabled=!document.getElementById('inpenable').disabled">切换可用状态</button>
+    </div>
+    <div>
+        <input type="checkbox" name="" id="chbcss">
+    </div>
+</body>
+</html>
